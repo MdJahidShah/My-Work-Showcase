@@ -1,0 +1,338 @@
+/*Md Jahid Shah*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 35px;
+	line-height: 40px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 16px/24px Georgia, serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+
+/*		Default Layout: 1080px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+--------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) and (max-width: 1384px){
+	
+	
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.container{width:98%;}
+	.topheader {
+    height: 82px;
+	}
+	.logo {
+    width: 29%;
+	}
+	.topright {
+    width: 70%;
+	}
+	#social-share {
+    width: 36%;
+    margin: 15px 0 0 98px;
+	}
+	.main-nav ul li ul li {
+    top: 17px;
+    background: #ccc;
+	border-bottom:1px solid #fff;
+	}
+	
+	#slider,.main-slider {
+    width: 99%;
+	}
+	.topcopost {
+    float: left;
+    width: 48%;
+    margin: 0 5px 0 5px;
+	}
+	.projectpart {
+    width: 47%;
+	padding:20px 0 10px 0;
+	}
+	.proname img{
+    height: 200px;
+    margin: 5px 0 10px -2px;
+	}
+	.upfc {
+    width: 49%;
+    float: left;
+    margin: 0 0 0 5px;
+	}
+		
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	.container{width:98%;padding-left: 0px;}
+
+	
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	.container{width: 98%;padding-left: 0px;}
+	.topheader {
+    height: 115px;
+	}
+	.logo {
+    width: 80%;
+	}
+	.logo p {
+    margin: 10px 0px 0 2px;
+    }
+	#social-share {
+    width: 100%;
+    margin: 15px 0 0 0;
+	}
+	#social-share ul {
+    margin: 0 0 0 8px;
+	}
+	.topright {
+    width: 100%;
+    overflow: hidden;
+	}
+	#slider,.main-slider {
+    width: 99%;
+    }
+	.topcopost {
+    width: 96%;
+	padding: 20px 0 10px 0;
+    }
+	.topcopost img {
+    width: 85px;
+    height: 80px;
+    float: left;
+	padding: 0 7px 0 0;
+	}
+	.clrev img {
+    width: 50px;
+    height: 50px;
+	}
+	.clrev h4 {
+    width: 79%;
+    overflow: hidden;
+	}
+	.clrev p {
+    text-align: justify;
+    overflow: hidden;
+    width: 84%;
+	}
+	.projectpart {
+    width: 99%;
+    margin: 0 5px 0 5px;
+	padding: 20px 0 11px 0;
+	}
+	.proname img{
+    height: 290px;
+	}
+	.letest-post, .mot, .upfc {
+    width: 98%;
+	padding: 15px 0 10px 0;
+	}
+	
+	.upfc h3 {
+    margin: 0 0 0 0;
+	}
+	.upfcc h4 {
+	}
+	.mot-img h3 a, .upfcc h3 a{margin:0;}
+	.cradit-left p, .cradit-right p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 4px 0px 0 6px;
+	}
+	.cradidt-footer {
+    margin-bottom: 4px;
+	}
+	.servicep p {
+    width: 76%;
+    text-align: justify;
+	}
+}
+	
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	.container{width: 98%;padding-left: 0px;}
+	.topheader {
+    height: 115px;
+	}
+	.logo {
+    width: 80%;
+	}
+	.logo p {
+    margin: 10px 0px 0 2px;
+    }
+	#social-share {
+    width: 100%;
+    margin: 15px 0 0 0;
+	}
+	#social-share ul {
+    margin: 0 0 0 8px;
+	}
+	.search-box {
+    position: absolute;
+    margin: 60px 0 0 250px;
+	}
+	.search_btn {
+    margin-right: -94px;
+	}
+	.topright {
+    width: 100%;
+    overflow: hidden;
+	}
+	#slider,.main-slider {
+    width: 99%;
+    }
+	.topcopost {
+    width: 96%;
+	padding: 20px 0 10px 0;
+    }
+	.topcopost img {
+    width: 85px;
+    height: 80px;
+    float: left;
+	padding: 0 7px 0 0;
+	}
+	.clrev img {
+    width: 50px;
+    height: 50px;
+	}
+	.clrev h4 {
+    width: 79%;
+    overflow: hidden;
+	}
+	.clrev p {
+    text-align: justify;
+    overflow: hidden;
+    width: 84%;
+	}
+	.projectpart {
+    width: 99%;
+    margin: 0 5px 0 5px;
+	padding: 20px 0 11px 0;
+	}
+	.proname img{
+    height: 290px;
+	}
+	.letest-post, .mot, .upfc {
+    width: 98%;
+	padding: 15px 0 10px 0;
+	}
+	
+	.upfc h3 {
+    margin: 0 0 0 0;
+	}
+	.upfcc h4 {
+	}
+	.mot-img h3 a, .upfcc h3 a{margin:0;}
+	.cradit-left p, .cradit-right p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 4px 0px 0 6px;
+	}
+	.cradidt-footer {
+    margin-bottom: 4px;
+	}
+	.servicep p {
+    width: 68%;
+    text-align: justify;
+	}
+
+}

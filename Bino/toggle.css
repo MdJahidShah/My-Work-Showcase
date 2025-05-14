@@ -1,0 +1,32 @@
+/*
+toggle css
+*/
+
+.toggle{
+	width: 100%;
+	padding: 6px 22px 6px 0;
+	text-align:left;
+	box-sizing:border-box;
+	color:#fff;
+	font-size:30px;
+	display:none;
+}
+.black{
+	height:400px;
+	width:350px;
+	background:red;
+}
+@media screen and (max-width: 768px) {
+  .toggle{display:block;}
+  .nav {
+    width: 96%;
+    margin: 0 10px 0 0;
+	}
+  .nav ul{display:none;width:100%;background:#00316b;}
+  .nav ul li{float:none;margin: 5px 0 0 10px;}
+  .nav ul li ul {
+    margin: 0 0 0 63px;
+    background: #00316b;
+	}
+  .active{display:block;}
+}

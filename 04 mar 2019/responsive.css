@@ -1,0 +1,276 @@
+/*Md Jahid Shah*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 35px;
+	line-height: 40px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 16px/24px Georgia, serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+
+/*		Default Layout: 1080px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+--------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) and (max-width: 1384px){
+	.selectnav{display:none;}
+	.menu-toggle{display:none;}
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.container{width:98%;}
+	#article-wrapper{width:64%;}
+	.logo img{height: 75px;}
+	.middle-header{height: 78px;}
+	.search-box{max-width: 30%;}
+	#main-nav ul li{padding-right: 10px;font-weight:normal;}
+	.selectnav{display:none;}
+	.admin-image{margin-left: 3px;}
+	.comment{float:none;}
+	.post{padding-left:0px;}
+	.post h2{line-height:0px;line-height: 25px;margin-bottom: 10px;}
+	.post p{line-height:10px;}
+	#sidebar{width: 32%;padding-right: 0px;}
+	.catagory h2,.facebook h2,.tags h2,.latest-post h2, .recent-post h2, .e-mail h2{font-size:20px;padding-left:10px;}
+	.email-box{width: 97%;height: 25px}
+	.submit-box{width: 98%;height: 28px;}
+	
+	.about,.Browser,.write-for-us{margin-left: 5px;margin-top: 10px;width: 32%;}
+	.left-browser{padding-left: 10px;}
+	
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	.container{width:98%;padding-left: 0px;}
+
+	#top-header{height:157px}
+	.top-header-social{float:right;}
+	.top-header-left{float:left;}
+	.top-header-left ul li, .top-header-social ul li{float:none;}
+
+	.middle-header{height: 50px;}
+	.header-ads{height: 45px;float:right;margin-top:0px;margin-right: 10px;}
+	.logo img{height:50px;}
+
+	#main-nav{display:block;height:2em;background:none;}
+	#main-nav ul{display:none;}
+	.selectnav{display: block;height: 2.75em;width:100%;}	
+	#mainmenu{display:none;}
+	.search-box{display:none;}
+	
+	#article-wrapper{width:98%;}
+	.post{padding-left: 0px;}
+	.post h2 {font-size: 25px;line-height: 0px;margin-bottom:15px;}
+	.p-and-image {width: 95%;}
+	.admin {width: 100%;float: left;font-size: 13px;}
+	.admin-image{margin-left: 0px;}
+	.admin-image img,.post-date img,.comment img{width: 20px;}
+	.comment {float:none;}
+	.pagination {font-size:19px;padding-left:0px;font-weight:normal;}
+	#sidebar{width:100%;}
+	.catagory h2,.facebook h2,.tags h2,.latest-post h2, .recent-post h2, .e-mail h2{font-size: 25px;line-height: 30px;}
+	.facebook img{padding-left:0px;}
+	.e-mail{margin-left:5px;}
+	.email-box{width:96%;height:20px;margin-left:6px;}
+	.submit-box{width:96%;height:25px;margin-left:10px;}
+	
+	.about,.write-for-us{width: 90.55%;float: none;text-align: justify;margin-bottom: 15px;margin-left: 15px;}
+	.Browser {width: 90.55%;height:230px;float: none;margin-top:-5px;margin-left: 15px;}
+	.footer_copyright p {font-size:11px;}
+/*social-share*/	
+	#social-share{position:absolute;border-radius:0px 1px 1px -1px;float:left;right:18%;top:4%;background: black;color: #fff;}
+	#social-share li{float:left;}
+	#social-share p{color:#fff;display:block;}
+/*social-share end*/
+	
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	.container{width: 98%;padding-left: 0px;}
+	
+	#top-header{height:157px}
+	.top-header-social{float:right;}
+	.top-header-left{float:left;}
+	.top-header-left ul li, .top-header-social ul li{float:none;}
+
+	.middle-header{height: 50px;}
+	.header-ads{height: 45px;float:right;margin-top:0px;margin-right: 10px;}
+	.logo img{height:50px;}
+
+	#main-nav{display:block;height:2em;background:none;}
+	#main-nav ul{display:none;}
+	.selectnav{display: block;height: 2.75em;width: 98%;}	
+	#mainmenu{display:none;}
+	.search-box{display:none;}
+	
+	#article-wrapper{width:100%;}
+	.post{padding-left: 0px;}
+	.post h2 {font-size: 25px;line-height: 0px;margin-bottom:15px;}
+	.p-and-image {width: 95%;}
+	.admin {width: 100%;float: left;font-size: 13px;}
+	.admin-image{margin-left: 0px;}
+	.admin-image img,.post-date img,.comment img{width: 20px;}
+	.comment {float:none;}
+	.pagination {font-size:19px;padding-left:0px;font-weight:normal;}
+	#sidebar{width:100%;}
+	.catagory h2,.facebook h2,.tags h2,.latest-post h2, .recent-post h2, .e-mail h2{font-size: 25px;line-height: 30px;}
+	.catagory,.facebook,.tags,.latest-post, .recent-post, .e-mail{margin-left: 10px;}
+	.facebook img{padding-left:2px;}
+	.e-mail{margin-left:7px;}
+	.email-box{width:96%;height:20px;margin-left:6px;}
+	.submit-box{width:96%;height:25px;margin-left:10px;}
+	
+	.about,.write-for-us{width: 90.55%;float: none;text-align: justify;margin-bottom: 15px;margin-left: 15px;}
+	.Browser {width: 90.55%;height:230px;float: none;margin-top:-5px;margin-left: 15px;}
+	.footer_copyright p {font-size:15px;}
+
+/*social-share start*/
+#social-share{top:0%;right:25%;}
+/*social-share end*/
+
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	.container{width: 98%;padding-left: 0px;}
+	
+	#top-header{height:157px}
+	.top-header-social{float:right;}
+	.top-header-left{float:left;}
+	.top-header-left ul li, .top-header-social ul li{float:none;}
+
+	.middle-header{height: 50px;}
+	.header-ads{height: 45px;float:right;margin-top:0px;margin-right: 10px;}
+	.logo img{height:50px;}
+
+	#main-nav{display:block;height:2em;background:none;}
+	#main-nav ul{display:none;}
+	.selectnav{display: block;height: 2.75em;width: 98%;}	
+	#mainmenu{display:none;}
+	.search-box{display:none;}
+	
+	#article-wrapper{width:100%;}
+	.post{padding-left: 0px;}
+	.post h2 {font-size: 25px;line-height: 0px;margin-bottom:15px;}
+	.p-and-image {width: 95%;}
+	.admin {width: 100%;float: left;font-size: 13px;}
+	.admin-image{margin-left: 0px;}
+	.admin-image img,.post-date img,.comment img{width: 20px;}
+	.comment {float:none;}
+	.pagination {font-size:19px;padding-left:0px;font-weight:normal;}
+	#sidebar{width:100%;}
+	.catagory h2,.facebook h2,.tags h2,.latest-post h2, .recent-post h2, .e-mail h2{font-size: 25px;line-height: 30px;}
+	.catagory,.facebook,.tags,.latest-post, .recent-post, .e-mail{margin-left: 10px;}
+	.facebook img{padding-left:2px;}
+	.e-mail{margin-left:7px;}
+	.email-box{width:96%;height:20px;margin-left:6px;}
+	.submit-box{width:96%;height:25px;margin-left:10px;}
+	
+	.about,.write-for-us{width: 90.55%;float: none;text-align: justify;margin-bottom: 15px;margin-left: 15px;}
+	.Browser {width: 90.55%;height:230px;float: none;margin-top:-5px;margin-left: 15px;}
+	.footer_copyright p {font-size:15px;}
+
+	/*social-share start*/
+	#social-share{top:0%;right:25%;}
+	/*social-share end*/
+	
+
+}

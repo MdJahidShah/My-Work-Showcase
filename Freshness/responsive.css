@@ -1,0 +1,364 @@
+/*Md Jahid Shah*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 35px;
+	line-height: 40px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 16px/24px Georgia, serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+
+/*		Default Layout: 1080px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+--------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) and (max-width: 1384px){
+	
+	
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.container{width:98%;}
+	.logo {
+    width: 100%;
+    float: none;
+    margin: 10px 0 0 5px;
+	}
+	.header {
+    height: 100px;
+	margin: -10px auto 0 auto;
+	}
+	.header-nav {
+    width: 100%;
+    float: none;
+	margin: 18px 0px 0 0;
+	border-top:1px solid #ccc;
+	}
+	.header-nav ul li ul li {
+    top: 5px;
+    right: -3px;
+	background: #ccc;
+	border-bottom: 1px solid #fff;
+	}
+	.letest-post, .mot, .upfc {
+    width: 32%;
+    float: left;
+    margin: 0px 5px 0 5px;
+	}
+	.post-img img, .mot-img img {
+    width: 205px;
+    height: 205px;
+    border: 5px solid #ddd;
+	margin: 10px 0 10px 11px;
+	}
+	.mot-img {
+    width: 100%;
+    float: none;
+	}
+	.mot img {
+    margin: 5px 10px 0 3px;
+	}
+	.mot, .upfc {
+    width: 32%;
+    float: left;
+    margin: 31px 5px 0 5px;
+	}
+	.cradit-left {
+    width: 46%;
+	}
+	.cradit-right {
+    width: 54%;
+    }
+	.cradit-left p, .cradit-right p {
+    line-height: 50px;
+    margin: 0px 15px 0px 15px;
+    font-size: 14px;
+	}
+	.social-share span a img {
+		width: 25px;
+	}
+		
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	.container{width:98%;padding-left: 0px;}
+	.logo {
+    width: 100%;
+    float: none;
+    margin: 10px 0 20px 5px;
+	}
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	.container{width: 98%;padding-left: 0px;}
+	.logo {
+    width: 97%;
+	}
+	.header-nav {
+    width: 100%;
+	}
+	#social-share ul {
+    margin: 0 0 0 -10px;
+	}
+	.search_btn {
+    margin-right: -99px;
+	}
+	.topcontent {
+    padding-top: 20px;
+	}
+	.topcopost img {
+    width: 40%;
+    margin: 0 10px 0 29%;
+	height: 145px;
+	}
+	.topcp h2 {
+    overflow: hidden;
+    margin: 0;
+	}
+	.topcp {
+    width: 98%;
+	}
+	.letest-post {
+    width: 98%;
+	}
+	.mot {
+    width: 47%;
+    float: left;
+    margin: 0 5px 20px 5px;
+	
+	}
+	.mot-img {
+    margin: 9px 5px 0 3px;
+    text-align: justify;
+    margin: 9px 7px 0 3px;
+    float: none;
+    width: 100%;
+	}
+	.mot img {
+    margin: 5px 10px 0 3px
+	}
+	.upfc {
+    width: 100%;
+    margin: 0 0 0 5px;
+    padding: 10px 0 15px 0;
+	}
+	.mot-img h3 a, .upfcc h3 a {
+    margin: 0 0 0 -11px;
+	}
+	.cradidt-footer {
+    height: 74px;
+	}
+	.cradit-left {
+    width: 100%;
+	}
+	.cradit-right {
+    width: 100%;
+	margin: -20px 0 0 0;
+	}
+	.cradit-left p, .cradit-right p {
+    float: left;
+	}
+	.social-share span a img {
+		width: 25px;
+	}
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	.container{width: 98%;padding-left: 0px;}
+	.logo {
+    width: 97%;
+	}
+	.header-nav {
+    width: 100%;
+	}
+	#social-share ul {
+    margin: 0 0 0 -10px;
+	}
+	.header-nav ul li ul {
+    display: block;
+    left: 160px;
+    top: -100px;
+    width: 49%;
+	}
+	input.search-txt {
+    width: 175px;
+	}
+	.search_btn {
+    margin-right: -64px;
+	}
+	.fa-search-plus {
+    background: none;
+    color: #000;
+	}
+	.topcontent {
+    padding-top: 20px;
+	}
+	.topcopost img {
+    width: 40%;
+    margin: 0 10px 0 29%;
+	height: 145px;
+	}
+	.topcp h2 {
+    overflow: hidden;
+    margin: 0;
+	}
+	.topcp {
+    width: 98%;
+	}
+	.letest-post {
+    width: 98%;
+	}
+	.mot {
+    width: 47%;
+    float: left;
+    margin: 0 5px 20px 5px;
+	
+	}
+	.mot-img {
+    margin: 9px 5px 0 3px;
+    text-align: justify;
+    margin: 9px 7px 0 3px;
+    float: none;
+    width: 100%;
+	}
+	.mot img {
+    margin: 5px 10px 6px 3px;
+    width: 94%;
+    height: 120px;
+	}
+	.upfc {
+    width: 100%;
+    margin: 0 0 0 5px;
+    padding: 10px 0 15px 0;
+	}
+	.mot-img h3 a, .upfcc h3 a {
+    margin: 0 0 0 -11px;
+	}
+	.cradidt-footer {
+    height: 74px;
+	}
+	.cradit-left {
+    width: 100%;
+	}
+	.cradit-right {
+    width: 100%;
+	margin: -20px 0 0 0;
+	}
+	.cradit-left p, .cradit-right p {
+    float: left;
+	font-size: 11px
+	}
+	.social-share span a img {
+		width: 25px;
+	}
+	.header {
+		flex-direction: column;
+	}
+	.header-nav {
+		display: flex;
+		flex-direction: column;
+		align-items: normal;
+	}
+	.header-nav ul li:has(ul)::after {
+		color: #fdfbfb;
+	}
+}

@@ -1,0 +1,311 @@
+/*Md Jahid Shah*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 35px;
+	line-height: 40px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 16px/24px Georgia, serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+
+/*		Default Layout: 1080px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+--------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) and (max-width: 1384px){
+	
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.container{width:98%;}
+	.mobile {
+    width: 46%;
+    }
+	.email {
+    width: 53%;
+	}
+	.nav ul li {
+    padding: 5px 4px 5px 0;
+	}
+	.article-post {
+    width: 48%;
+	}
+	.blockquote {
+    margin: 0 10px 0 10px;
+	}
+	.main-slider {
+    width: 95%;
+	}
+	.company,.recentp {
+    width: 46%;
+	margin-bottom: 20px;
+	}	
+	.upfc {
+	margin: 0 5px 0 8px;
+	}
+	.cradit-left {
+    width: 43%;
+	}
+	.cradit-right {
+    width: 56%;
+	}
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	.container{width:98%;}
+
+	
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	.container{width: 98%;}
+	.top-header {
+    height: 160px;
+	}
+	.headerinfo {
+    width: 98%;
+    overflow: hidden;
+    float: left;
+    margin: 15px 0 0 0;
+	}
+	.mobile,.email {
+    width: 98%;
+	float:left;
+	overflow:hidden;
+	}
+	.mobile h3, .email h3 {
+    font-size: 18px;
+    font-family: The New Roman;
+	text-align: left;
+	}
+	.logo {
+    width: 98%;
+    margin: 10px 0 5px 0;
+	}
+	#social-share {
+    top: 17%;
+    z-index: 9999;
+	}
+	.nav {
+	z-index: 999;
+	}
+	.article-post {
+    width: 100%;
+    padding: 10px 0 5px 0;
+	}
+	.blockquote {
+    padding: 20px 0 16px 0;
+    margin: 0 10px 0 5px;
+    text-align: justify;
+	}
+	.main-slider {
+	width: 96%;
+	}
+	.recentp {
+    width: 45%;
+    margin: 0 5px 0 15px;
+	}
+	.company {
+    width: 45%;
+    margin: 30px 5px 0 13px;
+	}
+	.upfc {
+    width: 96%;
+    }
+	.cradidt-footer {
+    height: 75px;
+    overflow: hidden;
+	}
+	.cradit-left {
+    width: 100%;
+	overflow: hidden;
+	}
+	.cradit-right {
+    width: 99%;
+    float:none;
+	overflow: hidden;
+	float:left;
+	}
+	.cradit-left p, .cradit-right p {
+    line-height: 33px;
+	}
+	
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	.container{width: 98%;}
+	.top-header {
+    height: 160px;
+	}
+	.headerinfo {
+    width: 98%;
+    overflow: hidden;
+    float: left;
+    margin: 15px 0 0 0;
+	}
+	.mobile,.email {
+    width: 98%;
+	float:left;
+	overflow:hidden;
+	}
+	.mobile h3, .email h3 {
+    font-size: 18px;
+    font-family: The New Roman;
+	text-align: left;
+	}
+	.logo {
+    width: 98%;
+    margin: 10px 0 0 0;
+	}
+	#social-share {
+    top: 17%;
+    z-index: 9999;
+	}
+	.nav {
+	z-index: 999;
+	}
+	.article-post {
+    width: 100%;
+    padding: 10px 0 5px 0;
+	}
+	.blockquote {
+    padding: 20px 0 16px 0;
+    margin: 0 10px 0 5px;
+    text-align: justify;
+	}
+	.main-slider {
+	width: 96%;
+	}
+	.recentp {
+    width: 93%;
+    margin: 0 5px 0 15px;
+	}
+	.company {
+    width: 89%;
+	}
+	.upfc {
+    width: 96%;
+    }
+	.cradidt-footer {
+    height: 75px;
+    overflow: hidden;
+	}
+	.cradit-left {
+    width: 100%;
+	overflow: hidden;
+	}
+	.cradit-right {
+    width: 99%;
+    float:none;
+	overflow: hidden;
+	float:left;
+	}
+	.cradit-left p, .cradit-right p {
+    line-height: 33px;
+    float: left;
+    font-size: 12px;
+	}
+	#submit:hover{background:black;color:#fff;}
+	
+	
+
+}

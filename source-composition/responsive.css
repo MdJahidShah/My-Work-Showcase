@@ -1,0 +1,286 @@
+/*Md Jahid Shah*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 35px;
+	line-height: 40px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 16px/24px Georgia, serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+
+/*		Default Layout: 1080px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+--------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) and (max-width: 1384px){
+	.selectnav{display:none;}
+	.menu-toggle{display:none;}
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.container{width:98%;}
+	.header {
+    height: 128px;
+	}
+	.logo {
+    width: 99%;
+	}
+	.nav {
+    width: 99%;
+    float: left;
+    margin: -18px 0 0 0;
+	}
+	.article-post {
+    width: 48%;
+	}
+	.player-post {
+    width: 32%;
+    margin: 20px 7px 15px 0;
+	}
+	.lw-img img {
+	width:92%;
+    margin: 20px 0 0 13px;
+	}
+	.upftr {
+    width: 96%;
+	padding: 7px 0 22px 0;
+	}
+	.cradit-left p, .cradit-right p {
+    font-size: 13px;
+	}
+		
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	.container{width:98%;}
+	.header {
+    height: 128px;
+	}
+	.logo {
+    width: 99%;
+	}
+	.nav {
+    width: 99%;
+    float: left;
+    margin: -18px 0 0 0;
+	}
+	.article-post {
+    width: 48%;
+	}
+	.player-post {
+    width: 32%;
+    margin: 20px 7px 15px 0;
+	}
+	.lw-img img {
+	width:92%;
+    margin: 20px 0 0 13px;
+	}
+	.upftr {
+    width: 96%;
+	padding: 7px 0 22px 0;
+	}
+	.cradit-left p, .cradit-right p {
+    font-size: 13px;
+	}
+	
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	.container{width: 98%;padding-left: 0px;}
+	.logo {
+    width: 99%;
+	}
+	.article-post {
+    width: 97%;
+	}
+	.player-post {
+    width: 47%;
+	}
+	.lw-img {
+    width: 98%;
+	}
+	.lw-img img {
+    width: 97%;
+    height: 239px;
+	margin:5px;
+	}
+	.upftrl {
+    width: 97%;
+	}
+	.upftrr {
+    width: 99%;
+    float: none;
+	}
+	.cradidt-footer {
+    height: 70px;
+	}
+	.cradit-left,.cradit-right {
+    float: left;
+    width: 100%;
+	}
+	.cradit-right {
+    margin: -21px 0 0 0;
+	}
+	.cradit-left p, .cradit-right p {
+    float: left;
+	}
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	.container{width: 98%;padding-left: 0px;}
+	.logo {
+    width: 99%;
+	margin: 0 0 26px 0;
+	}
+	.article-post {
+    width: 97%;
+	}
+	.player-post {
+    width: 47%;
+	}
+	.lw-img {
+    width: 98%;
+	}
+	.lw-img img {
+    width: 97%;
+    height: 239px;
+	margin:5px;
+	}
+	.upftr {
+    padding: 10px 0 31px 0;
+	}
+	.upftr h2 {
+    margin: 7px 0 10px 10px;
+	}
+	.upftrl {
+    width: 97%;
+	float: left;
+	margin-bottom:10px;
+	}
+	.upftrr {
+    width: 99%;
+    float: right;
+	}
+	.company, .Contact{width:98%;float:left;}
+	.company h2, .Contact h2{border-bottom:2px solid green;overflow:hidden;}
+	.cradidt-footer {
+    height: 70px;
+	}
+	input#name, input#email, input#message {
+    width: 97%;
+    margin: 1px 0 0 6px;
+	}
+	input#submit {
+    margin: 0 0 0 5px;
+	}
+	.cradit-left,.cradit-right {
+    float: left;
+    width: 100%;
+	}
+	.cradit-right {
+    margin: -21px 0 0 0;
+	}
+	.cradit-left p, .cradit-right p {
+    float: left;
+	font-size: 12px;
+	}
+}

@@ -1,0 +1,22 @@
+/*css of toggle button*/
+.toggle{
+	width:100%;
+	padding:10px 20px;
+	background:#001f44;
+	text-align:left;
+	box-sizing:border-box;
+	color:#fff;
+	font-size:30px;
+	display:none;
+}
+.black{
+	height:400px;
+	width:350px;
+	background:red;
+}
+@media screen and (max-width: 600px) {
+  .toggle{display:block;}
+  .main-nav ul{display:none;width:100%;background:#00316b;}
+  .main-nav ul li{float:none;top:-5px;margin: 0 0 0 0;}
+  .active{display:block;}
+}

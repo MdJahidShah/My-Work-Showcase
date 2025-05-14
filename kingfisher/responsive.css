@@ -1,0 +1,316 @@
+/*Md Jahid Shah*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 35px;
+	line-height: 40px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 16px/24px Georgia, serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+
+/*		Default Layout: 1080px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+--------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) and (max-width: 1384px){
+	.selectnav{display:none;}
+	.menu-toggle{display:none;}
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.container{width:98%;}
+	.logo {
+    width: 99%;
+    overflow: hidden;
+    margin: 0 0 0 9px;
+	}
+	.header {
+	width:100%;
+    height: 111px;
+	}
+	.nav {
+    width: 98%;
+	}
+	.nav ul {
+    margin: 0 0 0 5px;
+	}
+	.nav ul li ul li {
+    right: 8px;
+	}
+	.slider {
+	background:none;
+    margin: 55px 0 0 8px;
+	}
+	.main-slider {
+    width: 99%;
+	}
+	.sitecont-post {
+    width: 50%;
+	margin: 10px 0 0 0;
+	}
+	.seminar-post {
+    width: 47%;
+	}
+	.lw-img {
+    width: 47.5%;
+	margin: 0 0 0 10px;
+	}
+	.upfr {
+    width: 47%;
+    }
+
+		
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	.container{width:98%;padding-left: 0px;}
+
+	
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	.container{width: 98%;padding-left: 0px;}
+	.logo {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 0 0;
+	}
+	.nav {
+    width: 99%;
+    margin: 0 0 0 0;
+	}
+	.nav ul {
+    width: 99%;
+    height: 100%;
+	margin: -5px 0 0 9px;
+	}
+	.nav ul li ul li {
+    right: -9%;
+    top: 1px;
+    background: #001f44;
+    }
+	.slider{
+    width: 96%;
+    }
+	.sitecont-post {
+    width: 99%;
+    padding: 0 0 10px 0;
+	}
+	.post-p h2 {
+    margin: 10px 0 9px -13px;
+	}
+	.pimg {
+    margin: auto;
+	}
+	.seminar-post {
+    width: 95%;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ccc;
+	}
+	.lw-img {
+    width: 92.5%;
+    float: left;
+    margin: 0 10px 0 10px;
+	}
+	.lw-img img {
+    width: 98%;
+    margin: 23px 0 0 0;
+    }
+	.teaminfo {
+    margin: auto;
+    width: 100%;
+	}
+	.upfr {
+    width: 98%;
+    margin: 0 8px 0 12px;
+	}
+	.upftr-p {
+    width: 83%;
+    margin: -10px 0 0 0;
+	}
+	.upftr {
+    margin: 30px 5px 10px 5px;
+    }
+	input#name, input#email, input#message {
+    width: 97%;
+	}
+	.upfr ul {
+    margin: -25px 0 0 7px;
+	}
+
+
+	
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	.container{width: 98%;padding-left: 0px;}
+	.logo {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 0 0;
+	}
+	.nav {
+    width: 99%;
+    margin: 0 0 0 0;
+	}
+	.nav ul {
+    width: 99%;
+    height: 100%;
+	margin: -5px 0 0 9px;
+	}
+	.nav ul li ul li {
+    right: -9%;
+    top: 1px;
+    background: #001f44;
+    }
+	.slider{
+    width: 96%;
+    }
+	.sitecont-post {
+    width: 99%;
+    padding: 0 0 10px 0;
+	}
+	.post-p h2 {
+    margin: 10px 0 9px -13px;
+	}
+	.pimg {
+    margin: auto;
+	}
+	.seminar-post {
+    width: 95%;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ccc;
+	}
+	.lw-img {
+    width: 92.5%;
+    float: left;
+    margin: 0 10px 0 10px;
+	}
+	.lw-img img {
+    width: 98%;
+    margin: 23px 0 0 0;
+    }
+	.teaminfo {
+    margin: auto;
+    width: 100%;
+	}
+	.upfr {
+    width: 98%;
+    margin: 0 8px 0 12px;
+	}
+	.upftr-p {
+    width: 76%;
+    margin: -10px 0 0 0;
+    float: left;
+	}
+	.upftr {
+    margin: 30px 5px 10px 5px;
+    }
+	input#name, input#email, input#message {
+    width: 97%;
+	}
+	.upfr ul {
+    margin: -25px 0 0 7px;
+	}
+	
+
+}

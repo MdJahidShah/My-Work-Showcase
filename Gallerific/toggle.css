@@ -1,0 +1,24 @@
+/*
+toggle css
+*/
+
+.toggle{
+	width:100%;
+	padding:10px 20px;
+	background:#001f44;
+	box-sizing:border-box;
+	color:#fff;
+	font-size:30px;
+	display:none;
+}
+.black{
+	height:400px;
+	width:350px;
+	background:red;
+}
+@media screen and (max-width: 600px) {
+  .toggle{display:block;}
+  .main-nav ul{margin: 0 0px 0 0;display:none;width:100%;background:#00316b;}
+  .main-nav ul li{float:none;top:-5px;margin: 5px 0 0 10px;}
+  .active{display:block;}
+}

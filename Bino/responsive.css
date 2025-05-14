@@ -1,0 +1,427 @@
+/*Md Jahid Shah*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 35px;
+	line-height: 40px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 16px/24px Georgia, serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+
+/*		Default Layout: 1080px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+--------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) and (max-width: 1384px){
+	
+	
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.container{width:98%;}
+	.logo {
+	width:20%;
+    margin: auto;
+	float:none;
+	}
+	.properter {
+    z-index: 998;
+	}
+	#chevron{margin:-134px 0 0 0}
+	.dropdownimg {
+    margin: 180px 0 0 363px;}
+	.toggle{
+	width: 100%;
+	text-align:right;}
+	.introduce-post {
+    width: 32%;
+    margin: 10px 5px 15px 5px;}
+	.hname {
+    width: 22%;}
+	.casepic img {
+    height: 533px;}
+	.caseida {
+    padding: 0 0 16px 0;}
+	.hnamep {
+    width: 20%;}
+	.hnamet {
+    width: 16%;}
+	.hnameg {
+    width: 60%;}
+	.others {
+    width: 23%;
+    margin: 10px 0 0 10px;}
+	.others img {
+    width: 166px;}
+	.hnameb {
+    width: 17%;}
+	.blogcont {
+    width: 30%;}
+	.hnamek {
+    width: 32%;}
+	.upftrr {
+    width: 100%;}
+	.cradit-left p, .cradit-right p {
+    font-size: 12px;
+	}
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	.container{width:98%;padding-left: 0px;}
+
+	
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container{width: 98%;padding-left: 0px;}
+	.logo {
+    width: 100%;
+    text-align: center;
+	}
+	.properter {
+    z-index: 9;
+	}
+	.dropdownimg {
+    margin: 121px 0 0 220px;
+	}
+	.introduce-post {
+    width: 47%;
+    margin: 0 5px 22px 5px;
+    }
+	.introduce-post img {margin: 0 0 0 84px;}
+	.ourservice img {
+    margin: 84px 0 0 0;
+	}
+	.sicon {
+    width: 100%;
+	height:auto;
+	background:none;
+    text-align: center;
+	}
+	.servicectg {margin: -47px 0 10px 0;}
+	.servicectgl {
+    width: 98%;
+	overflow:hidden;
+	}
+	.servicectgl h3 {
+    text-align: center;
+    margin: 0 0 16px 0;
+	float:none;
+	}
+	.fa.fa-desktop, .fa.fa-print, .fa.fa-camera {margin: 0;}
+	.servicectgl p {margin: 0 0 0 11px;}
+	.hname {
+    width: 35%;
+	}
+	.ourservicesl {
+    margin: 44px 0 0 0;
+	}
+	.recentworkp p, .casestudyp p, .ourteam p {
+    width: 99%;
+	}
+	.dwnblist {
+    width: 99%;
+	}
+	.recentpic {
+    width: 50%;
+	}
+	.casepic img {
+    height: 535px;
+	}
+	.casestudy {
+    padding-bottom: 95px;
+	}
+	.about {
+    width: 50%;
+    }
+	.hnamep {
+    width: 32%;
+	}
+	.ourprice {
+    width: 47%
+	}
+	.hnamet {
+    width: 26%;
+	}
+	.hnameg {
+    width: 73%;
+	}
+	.integrationtop h2 {
+    font-size: 17px;
+	}
+	.others {
+    width: 45%;
+	}
+	.hnameb {
+    width: 25%;
+	}
+	.blogcont {
+    width: 45%;
+	}
+	.hnamek {
+    width: 70%;
+	}
+	.upftrr {
+    width: 99%;}
+	.company {
+    width: 99%;}
+	.Contact {
+    width: 96%;
+    float: left;
+	}
+	input#name, input#email, input#message {
+    width: 90%;}
+	.cradit-left,.cradit-right{float:left;width:100%;}
+	.cradidt-footer {
+    height: 75px;}
+	.cradit-left p, .cradit-right p{float:left;}
+	.cradit-right {
+    margin: -20px 0 0 0;}
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	.container{width: 98%;padding-left: 0px;}
+	.logo {
+    width: 100%;
+    text-align: center;
+	}
+	.properter {
+    z-index: 9;
+	}
+	.dropdownimg {
+    margin: 90px 0 0 160px;
+	}
+	.introduce-post {
+    width: 47%;
+    margin: 0 5px 22px 5px;
+    }
+	.introduce-post img {margin: 0 0 0 60px;}
+	.ourservice img {
+    margin: 84px 0 0 0;
+	}
+	.sicon {
+    width: 100%;
+	height:auto;
+	background:none;
+    text-align: center;
+	}
+	.servicectg {margin: -47px 0 10px 0;}
+	.servicectgl {
+    width: 98%;
+	overflow:hidden;
+	}
+	.servicectgl h3 {
+    text-align: center;
+    margin: 0 0 16px 0;
+	float:none;
+	}
+	.fa.fa-desktop, .fa.fa-print, .fa.fa-camera {margin: 0;}
+	.servicectgl p {margin: 0 0 0 11px;}
+	.hname {
+    width: 48%;
+	}
+	.ourservicesl {
+    margin: 44px 0 0 0;
+	}
+	.recentworkp p, .casestudyp p, .ourteam p {
+    width: 99%;
+	}
+	.dwnblist {
+    width: 99%;
+	}
+	.recentpic {
+    width: 99%;
+	}
+	.casepic img {
+    height: auto;
+    }
+	.casepic {
+    display:none;
+	}
+	.caseleft {
+    width: 99%;}
+	.caseida{margin: 40px 0 0 0;}
+	.casestudy {
+    padding-bottom: 95px;
+	}
+	.about {
+    width: 99%;
+    }
+	.hnamep {
+    width: 43%;
+	}
+	.ourprice {
+    width: 47%
+	}
+	.hnamet {
+    width: 34%;
+	}
+	.hnameg {
+    width: 97%;
+	}
+	.integrationtop h2 {
+    font-size: 17px;
+	}
+	.others {
+    width: 90%;
+	height: 100%;
+	}
+	.others h1 {
+    padding: 30px 0 30px 0;
+	}
+	.others img {
+    height: 150px;
+    width: 100%;
+	}
+	.hnameb {
+    width: 34%;
+	}
+	.blogcont {
+    width: 93%;
+	}
+	.upp h3 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+	}
+	.hnamek {
+    width: 70%;
+	}
+	.upftrr {
+    width: 99%;}
+	.company {
+    width: 99%;}
+	.Contact {
+    width: 96%;
+    float: left;
+	}
+	.hnamew {
+    width: 45%;}
+	input#name, input#email, input#message {
+    width: 90%;}
+	.cradit-left,.cradit-right{float:left;width:100%;}
+	.cradidt-footer {
+    height: 75px;}
+	.cradit-left p, .cradit-right p{float:left;}
+	.cradit-right {
+    margin: -20px 0 0 0;}
+	.getandlearn {
+    width: 55%;}
+	.getandlearn-r {width: 98%;
+    margin: 5px 0 0 0;
+	}
+	.getandlearn-l {
+    width:36%;
+    border-radius: 0;
+	}
+	#chevron{margin: -133px 0 0 0;}
+	#chevron::before {
+    top: 29px;}
+	#chevron::after	{
+    top: 29px;}
+	.caseida h2 {font-size: 18px;}
+	.caseida img {margin: 10px 0 -25px 38%;}
+	.caseida {height: auto;padding: 0 0 10px 0;}
+	.readmore {margin-top: 9px;}
+	.aboutsites {
+    padding: 19px 0 45px 0;}
+	.oteam {
+    width: 50%;
+    margin: 0;}
+}

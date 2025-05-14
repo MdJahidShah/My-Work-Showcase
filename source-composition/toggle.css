@@ -1,0 +1,49 @@
+/*
+add this before ul
+
+<head>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<div class="toggle">
+	<i class="fa fa-bars menu"></i>
+</div>
+<ul>
+
+*/
+
+.toggle{
+	width:100%;
+	padding:10px 20px;
+	background:#001f44;
+	text-align:left;
+	box-sizing:border-box;
+	color:#fff;
+	font-size:30px;
+	display:none;
+}
+.black{
+	height:400px;
+	width:350px;
+	background:red;
+}
+@media screen and (max-width: 600px) {
+  .toggle{display:block;}
+  .nav {
+    width: 98%;
+    float: left;
+    margin: 22px 0 0 1px;
+	}
+  .nav ul{display:none;height: auto;margin: 0 0 0 0;width:100%;background:#00316b;}
+  .nav ul li {
+    float: none;
+    top: 5px;
+    margin: 0;
+	}
+	.nav ul li ul li {
+    right: -39px;
+    top: 0;
+	background:#001f44;
+	}
+  .active{display:block;}
+}
